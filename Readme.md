@@ -36,6 +36,6 @@ Everyone is welcome to contribute. Please take a moment to review the [contribut
 
 ## Authors and license
 
-[Jean-alexandre Iragne](Morgoth) and [contributors](https://github.com/Iragne/Template-Serverless/graphs/contributors).
+[Jean-alexandre Iragne](https://github.com/Iragne) and [contributors](https://github.com/Iragne/Template-Serverless/contributors).
 
 MIT License, see the included [License.md](License.md) file.
