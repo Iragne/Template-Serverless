@@ -8,6 +8,9 @@ module.exports.hello = async (event, context, callback) => {
       input: event,
     }),
   };
-  // todo 
+  // todo
+  if (false) {
+  	return payload;
+  } 
   callback(null, payload);
 };
