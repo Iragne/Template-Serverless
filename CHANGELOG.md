@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.2"></a>
+## [2.1.2](https://github.com/Iragne/Template-Serverless/compare/v2.1.1...v2.1.2) (2019-01-18)
+
+
+### Bug Fixes
+
+* **Add exception:** If false direct retun ([3d34b3e](https://github.com/Iragne/Template-Serverless/commit/3d34b3e))
+* **Add exception:** If false direct retun ([55449a1](https://github.com/Iragne/Template-Serverless/commit/55449a1))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/Iragne/Template-Serverless/compare/v2.1.0...v2.1.1) (2019-01-18)
 
