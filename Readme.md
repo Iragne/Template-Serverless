@@ -28,7 +28,7 @@ $npm run release
 
 ## Change log
 
-The change log can be found on the [Releases page](https://github.com/Celeborn/test-serverless/releases).
+The change log can be found on the [Releases page](https://github.com/Iragne/Template-Serverless/releases).
 
 ## Contributing
 
@@ -36,6 +36,6 @@ Everyone is welcome to contribute. Please take a moment to review the [contribut
 
 ## Authors and license
 
-[Jean-alexandre Iragne](Morgoth) and [contributors](https://github.com/Celeborn/test-serverless/graphs/contributors).
+[Jean-alexandre Iragne](Morgoth) and [contributors](https://github.com/Iragne/Template-Serverless/graphs/contributors).
 
 MIT License, see the included [License.md](License.md) file.
