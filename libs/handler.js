@@ -9,8 +9,8 @@ module.exports.hello = async (event, context, callback) => {
     }),
   };
   // todo
-  if (false) {
-  	return payload;
+  if (payload.statusCode === 300) {
+    return payload;
   } 
   callback(null, payload);
 };
