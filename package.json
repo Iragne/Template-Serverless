@@ -1,0 +1,61 @@
+{
+  "name": "test-serverless",
+  "version": "2.0.0",
+  "description": "",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^7.3.2",
+    "@commitlint/config-conventional": "^7.3.1",
+    "@commitlint/prompt-cli": "^7.3.1",
+    "commitlint": "^7.3.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "danger": "^7.0.2",
+    "danger-plugin-fixme": "^1.0.0",
+    "eslint": "^5.12.0",
+    "husky": "^1.3.1",
+    "jest": "*",
+    "nodemon": "^1.18.9",
+    "serverless-offline": "^4.1.3",
+    "standard-version": "^4.4.0"
+  },
+  "scripts": {
+    "dev": "npx nodemon --exec 'sls offline start' -e 'extensions,to,watch,for,example,js,elm,hs,py'",
+    "czinit": "npx commitizen init cz-conventional-changelog --save-dev --save-exact",
+    "pretest": "npm run lint",
+    "test": "npm run test:jest && npm run test:todo",
+    "release": "standard-version",
+    "commit": "./node_modules/.bin/commit",
+    "test:jest": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:todo": "npx danger  local --base master --dangerfile dangerfile.js ",
+    "lint": "eslint . --cache --fix"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "commit-msg": "node_modules/.bin/commitlint -g ./commitlint.config.js -E HUSKY_GIT_PARAMS && echo >> ./.git/COMMIT_EDITMSG && jest --coverage  --silent  >> ./.git/COMMIT_EDITMSG 2>&1"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
