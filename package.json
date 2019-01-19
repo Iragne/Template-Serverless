@@ -47,7 +47,6 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
-      "pre-push": "npm test",
       "commit-msg": "node_modules/.bin/commitlint -g ./commitlint.config.js -E HUSKY_GIT_PARAMS && echo >> ./.git/COMMIT_EDITMSG && jest --coverage  --silent  >> ./.git/COMMIT_EDITMSG 2>&1"
     }
   },
