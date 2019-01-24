@@ -23,16 +23,16 @@
     "standard-version": "^4.4.0"
   },
   "scripts": {
-    "dev": "npx nodemon --exec 'sls offline start' -e 'extensions,to,watch,for,example,js,elm,hs,py'",
-    "czinit": "npx commitizen init cz-conventional-changelog --save-dev --save-exact",
+    "dev": "nodemon --exec 'sls offline start' -e 'extensions,to,watch,for,example,js,elm,hs,py'",
+    "czinit": "commitizen init cz-conventional-changelog --save-dev --save-exact",
     "pretest": "npm run lint",
     "test": "npm run test:jest && npm run test:todo",
     "release": "standard-version",
-    "commit": "./node_modules/.bin/commit",
+    "commit": "commit",
     "test:jest": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:todo": "npx danger  local --base master --dangerfile dangerfile.js ",
+    "test:todo": "danger  local --base master --dangerfile dangerfile.js ",
     "lint": "eslint . --cache --fix"
   },
   "jest": {
